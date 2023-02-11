@@ -1,1 +1,91 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Time Sheet Calculator</h1>
+        <div class="tableHead">
+            <input type="text" value="Day" disabled>
+            <input type="text" value="Starting Time" disabled>
+            <input type="text" value="Ending Time" disabled>
+            <input type="text" value="Break Deduction" disabled>
+            <input type="text" value="Total" disabled>
+        </div>
+        <div class="tableData">
+            <div class="tr">
+                <form>
+                    <th><input type="text" value="Monday"></th>
+                    <td><input type="time" id="11"></td>
+                    <td><input type="time" id="12"></td>
+                    <td><input type="time" id="13"></td>
+                    <td><input type="text" value="00:00" id="14" ></td>
+                </form>
+            </div>
+            <div class="tr">
+                <form>
+                    <th><input type="text" value="Tuesday"></th>
+                    <td><input type="time" id="21"></td>
+                    <td><input type="time" id="22"></td>
+                    <td><input type="time" id="23"></td>
+                    <td><input value="00:00" id="24" disabled></td>
+                </form>
+            </div>
+            <div class="tr">
+                <form>
+                    <th><input type="text" value="Wedneday"></th>
+                    <td><input type="time" id="31"></td>
+                    <td><input type="time" id="32"></td>
+                    <td><input type="time" id="33"></td>
+                    <td><input value="00:00" id="34" disabled></td>
+                </form>
+            </div>
+            <div class="tr">
+                <form>
+                    <th><input type="text" value="Thrusday"></th>
+                    <td><input type="time" id="41"></td>
+                    <td><input type="time" id="42"></td>
+                    <td><input type="time" id="43"></td>
+                    <td><input value="00:00" id="44" disabled></td>
+                </form>
+            </div>
+            <div class="tr">
+                <form>
+                    <th><input type="text" value="Friday"></th>
+                    <td><input type="time" id="51"></td>
+                    <td><input type="time" id="52"></td>
+                    <td><input type="time" id="53"></td>
+                    <td><input value="00:00" id="54" disabled></td>
+                </form>
+            </div>
+            <div class="tr">
+                <form>
+                    <th><input type="text" value="Saturday"></th>
+                    <td><input type="time" id="61"></td>
+                    <td><input type="time" id="62"></td>
+                    <td><input type="time" id="63"></td>
+                    <td><input value="00:00" id="64" disabled></td>
+                </form>
+            </div>
+            <div class="tr">
+                <form>
+                    <th><input type="text" value="Sunday"></th>
+                    <td><input type="time" id="71"></td>
+                    <td><input type="time" id="72"></td>
+                    <td><input type="time" id="73"></td>
+                    <td><input value="00:00" id="74" disabled></td>
+                </form>
+            </div>
+            <div class="TotalHours"><h7>Total Hours : </h7><input value="00:00" type="text" id="final_total_hours"  ></div>
+        </div>
+        <button id="clear" onclick="reset()">Clear</button>
+        <button id="calculate" onclick="calculate()">Calculate</button>
+    </div>
+    <script src="./indes.js"></script>
+</body>
+</html>
